@@ -1,0 +1,182 @@
+*{
+    top:0;
+    left:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    width:100vw;
+    background-image: linear-gradient( to right,#b2b8f1 70%,#0d2fa8 30%);
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 4% 0px 0px 7% ;
+}
+
+.heading{
+    color:#0c46a1;
+}
+
+.heading a{
+    color:#0d57cd;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.login{
+    margin-top: 7%;
+}
+
+.login-title a{
+    display: flex;
+    margin-top: 5px;
+    color: #686c8e;    
+}
+
+form{
+    margin-top: 5%;
+    width: 65%;
+   display: flex;
+   flex-direction: column;
+}
+
+form>*{
+    margin-bottom: 5%;
+}
+
+.forrem-cont{
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forrem-cont a{
+    text-decoration: none;
+    color: #686c8e;
+}
+
+#username,#password,#login{
+    width: 90%;
+    height: 50px;
+}
+
+.pwd{
+    position: relative;
+}
+
+.eye{
+    position:absolute;
+    top: 16.6px;
+    left: calc(90% - 40px);
+}
+
+.remember{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+#remMe{
+    accent-color: #511077;
+}
+
+#username,#password{
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 2px 2px 5px rgba(25, 25, 25, 0.184) inset;
+    background-color: #b2b8f1;
+    padding-left: 30px;
+}
+
+#username:focus,#password:focus,#login:focus{
+    outline: none;
+}
+
+#login{
+    background-color: #0d2fa8;
+    color: white;
+    box-shadow: none;
+    font-weight: 700;
+    border-style: none;
+    font-size: 1.2rem;
+}
+
+
+.images{
+    background-color: aliceblue;
+    position: absolute;
+    left:70%;
+    z-index: -1;
+}
+
+:root{
+    --wid:100%;
+}
+
+.obj{
+    position: absolute;
+    z-index: 1;
+}
+
+.bottle{
+    width: 300px;
+    height: 250px;
+    top:50px;
+    left:-130px;
+}
+
+.pill{
+    width: 190px;
+    height: 190px;
+    top:460px;
+    left:150px;
+}
+
+.sethes{
+    width: 300px;
+    height: 300px;
+    top:300px;
+    left:-100px;
+}
+.heart{
+    width: 150px;
+    height: 150px;
+    top:230px;
+    left:100px;
+}
+
+@media only screen and (max-width:1200px) {
+    :root{
+        --wid:95%;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .images{
+        display: none;
+    }
+    .heart,.pill{
+        width: 150px;
+        height: 150px;
+    }
+    form{
+        width: 100%;
+    }
+    body{
+        background-image: none;
+        background-color: #b2b8f1;
+    }
+}
